@@ -6,4 +6,5 @@ function ola() {
   console.log("Olá lindeza!");
 }
 
+export default hello;
 export { hello, ola };
