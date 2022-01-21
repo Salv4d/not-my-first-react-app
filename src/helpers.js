@@ -1,10 +1,13 @@
-function hello() {
-  console.log("Hello there you beautiful!");
+function choice(items) {
+  return items[Math.floor(Math.random() * items.length)];
 }
 
-function ola() {
-  console.log("Olá lindeza!");
+function remove(items, item) {
+  const itemIdx = items.indexOf(item) >= 0;
+  if (itemIdx >= 0) {
+    items.splice(itemIdx, 1);
+  }
+  return items;
 }
 
-export default hello;
-export { hello, ola };
+export { choice, remove };
